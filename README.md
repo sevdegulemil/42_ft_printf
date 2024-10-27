@@ -18,8 +18,6 @@
 
 ## Kurulum
 
-Bu kütüphaneyi kendi projenizde kullanmak için aşağıdaki adımları izleyin:
-
 1. Bu projeyi klonlayın:
    ```bash
    git clone https://github.com/kullanıcı_adı/ft_printf.git
@@ -28,11 +26,33 @@ Bu kütüphaneyi kendi projenizde kullanmak için aşağıdaki adımları izleyi
    make
 
 ## Kullanım
-```#include "ft_printf.h"
 
-int main() {
+Örneğin;
+```c
+   #include "ft_printf.h"
+
+   int main() {
     int a = 42;
     ft_printf("Değer: %d\n", a);
     return 0;
 }
 ```
+## Fonksiyonlar
+
+ft_printf aşağıdaki format belirteçlerini destekler:
+
+%c: Karakter yazdırır.
+
+%s: Dize (string) yazdırır.
+
+%p: Pointer adresini yazdırır.
+
+%d: Tam sayı yazdırır.
+
+%i: Tam sayı yazdırır (aynı şekilde %d gibi).
+
+%u: Pozitif tam sayı yazdırır.
+
+%x: Tam sayıyı onaltılık (hexadecimal) olarak yazdırır (küçük harfle).
+
+%X: Tam sayıyı onaltılık (hexadecimal) olarak yazdırır (büyük harfle).
